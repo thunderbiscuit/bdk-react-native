@@ -1,0 +1,7 @@
+rust:
+  directory: calendar-ffi
+  manifestPath: Cargo.toml
+
+android:
+  targets:
+    - arm64-v8a

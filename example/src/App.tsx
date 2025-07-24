@@ -1,12 +1,13 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'bdk-rn';
+import { Month } from 'bdk-rn';
 
-const result = multiply(3, 7);
+const result = Month.August;
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      {/* <Text>Result: {result.toString()}</Text> */}
+      <Text>Result: {Month[result]}</Text>
     </View>
   );
 }

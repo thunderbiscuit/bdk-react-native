@@ -32,6 +32,10 @@
     "!**/.*"
   ],
   "scripts": {
+    "ubrn:ios": "ubrn build ios --and-generate && (cd example/ios && pod install)",
+    "ubrn:android": "ubrn build android --and-generate",
+    "ubrn:checkout": "ubrn checkout",
+    "ubrn:clean": "rm -rfv cpp/ android/CMakeLists.txt android/src/main/java android/*.cpp ios/ src/Native* src/index.*ts* src/generated/",
     "example": "yarn workspace bdk-rn-example",
     "test": "jest",
     "typecheck": "tsc",
@@ -159,5 +163,8 @@
     "languages": "kotlin-objc",
     "type": "turbo-module",
     "version": "0.52.0"
+  },
+  "dependencies": {
+    "uniffi-bindgen-react-native": "0.29.0-0"
   }
 }

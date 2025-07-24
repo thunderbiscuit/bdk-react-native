@@ -1840,16 +1840,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@evilmartians/lefthook@npm:^1.5.0":
-  version: 1.12.2
-  resolution: "@evilmartians/lefthook@npm:1.12.2"
-  bin:
-    lefthook: bin/index.js
-  checksum: 99d29d4c700bb22b75838603589896a5368b0512a813df9cb6d807cf2317301cac7154dd53c2714d5a466ee5d3b74166140736201e84bbec29d05b6006c7030f
-  conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64 | cpu=ia32)
-  languageName: node
-  linkType: hard
-
 "@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
   version: 9.3.0
   resolution: "@hapi/hoek@npm:9.3.0"
@@ -4134,7 +4124,6 @@ __metadata:
     "@eslint/compat": ^1.2.7
     "@eslint/eslintrc": ^3.3.0
     "@eslint/js": ^9.22.0
-    "@evilmartians/lefthook": ^1.5.0
     "@react-native-community/cli": 15.0.0-alpha.2
     "@react-native/babel-preset": 0.79.2
     "@react-native/eslint-config": ^0.78.0
@@ -4154,6 +4143,7 @@ __metadata:
     release-it: ^17.10.0
     turbo: ^1.10.7
     typescript: ^5.8.3
+    uniffi-bindgen-react-native: ^0.29.0-0
   peerDependencies:
     react: "*"
     react-native: "*"
@@ -11994,6 +11984,16 @@ __metadata:
   version: 0.1.0
   resolution: "unicorn-magic@npm:0.1.0"
   checksum: 48c5882ca3378f380318c0b4eb1d73b7e3c5b728859b060276e0a490051d4180966beeb48962d850fd0c6816543bcdfc28629dcd030bb62a286a2ae2acb5acb6
+  languageName: node
+  linkType: hard
+
+"uniffi-bindgen-react-native@npm:^0.29.0-0":
+  version: 0.29.0-0
+  resolution: "uniffi-bindgen-react-native@npm:0.29.0-0"
+  bin:
+    ubrn: bin/cli.cjs
+    uniffi-bindgen-react-native: bin/cli.cjs
+  checksum: 0716a1c170ad9b151f2f21d5ec887b3fb984182e6fc2242b19284be92a9fe40e4a00fc8e7b4bc10726bc8ed19a0bd213ec213d0bf52f65ba5016c1c32a0f59cc
   languageName: node
   linkType: hard
 
