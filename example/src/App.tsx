@@ -1,13 +1,12 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { Month } from 'bdk-rn';
+import { Network } from 'bdk-rn';
 
-const result = Month.August;
+const result = Network.Signet;
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Text>Result: {result.toString()}</Text> */}
-      <Text>Result: {Month[result]}</Text>
+      <Text style={styles.text}>Your current network is: {Network[result]}</Text>
     </View>
   );
 }
@@ -17,5 +16,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+    text: {
+    fontSize: 18,
   },
 });

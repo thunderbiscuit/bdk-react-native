@@ -17,8 +17,14 @@ cargo install cargo-ndk
 
 ```shell
 # Build the Android library
-yarn ubrn:android --config ubrn.config.yaml
+just comment-out-name
+just build-android
 
 # Run the Android example app
+# In a separate terminal, start Metro
+cd examples/
+npx react-native start
+# Then start the app
+cd ../
 yarn example android
 ```

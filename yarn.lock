@@ -4143,7 +4143,7 @@ __metadata:
     release-it: ^17.10.0
     turbo: ^1.10.7
     typescript: ^5.8.3
-    uniffi-bindgen-react-native: ^0.29.0-0
+    uniffi-bindgen-react-native: 0.29.0-0
   peerDependencies:
     react: "*"
     react-native: "*"
@@ -11987,7 +11987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uniffi-bindgen-react-native@npm:^0.29.0-0":
+"uniffi-bindgen-react-native@npm:0.29.0-0":
   version: 0.29.0-0
   resolution: "uniffi-bindgen-react-native@npm:0.29.0-0"
   bin:

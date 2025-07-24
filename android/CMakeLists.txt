@@ -26,7 +26,7 @@ include_directories(
 
 add_library(bdk-rn            SHARED
     ../cpp/bdk-rn.cpp
-    ../cpp/generated/calendar.cpp
+    ../cpp/generated/bdk.cpp
     cpp-adapter.cpp
 )
 
@@ -40,7 +40,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror")
 
 cmake_path(
   SET MY_RUST_LIB
-  ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libcalendar_ffi.a
+  ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libbdk_ffi.a
   NORMALIZE
 )
 add_library(my_rust_lib STATIC IMPORTED)

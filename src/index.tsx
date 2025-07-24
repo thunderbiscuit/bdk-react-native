@@ -11,24 +11,24 @@ if (!rustInstalled) {
 }
 
 // Export the generated bindings to the app.
-export * from './generated/calendar';
+export * from './generated/bdk';
 
 // Now import the bindings so we can:
 // - intialize them
 // - export them as namespaced objects as the default export.
-import * as calendar from './generated/calendar';
+import * as bdk from './generated/bdk';
 
 // Initialize the generated bindings: mostly checksums, but also callbacks.
 // - the boolean flag ensures this loads exactly once, even if the JS code
 //   is reloaded (e.g. during development with metro).
 let initialized = false;
 if (!initialized) {
-  calendar.default.initialize();
+  bdk.default.initialize();
   initialized = true;
 }
 
 // Export the crates as individually namespaced objects.
 export default {
-  calendar,
+  bdk,
 };
 

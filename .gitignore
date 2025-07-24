@@ -73,6 +73,8 @@ lib/
 # React Native Codegen
 ios/generated
 android/generated
+src/generated
+cpp/
 
 # React Native Nitro Modules
 nitrogen/
@@ -80,6 +82,7 @@ nitrogen/
 # Rust
 target/
 libcalendar_ffi.a
+libbdk_ffi.a
 
 # Other
 NOTES.md

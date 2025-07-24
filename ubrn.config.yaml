@@ -1,5 +1,9 @@
+# rust:
+#   directory: calendar-ffi
+#   manifestPath: Cargo.toml
+
 rust:
-  directory: calendar-ffi
+  directory: bdk-ffi/bdk-ffi
   manifestPath: Cargo.toml
 
 android:
