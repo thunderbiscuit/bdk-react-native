@@ -1,7 +1,3 @@
-# rust:
-#   directory: calendar-ffi
-#   manifestPath: Cargo.toml
-
 rust:
   directory: bdk-ffi/bdk-ffi
   manifestPath: Cargo.toml
