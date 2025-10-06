@@ -81,8 +81,7 @@ nitrogen/
 
 # Rust
 target/
-libcalendar_ffi.a
-libbdk_ffi.a
+libbdkffi.a
 
 # Other
 NOTES.md
