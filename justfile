@@ -34,9 +34,9 @@ submodule-to-master:
 
 [group("Build")]
 [doc("Required for building the library correctly.")]
-comment-out-name:
-    sed -i.bak 's/^\(name *= *"bdkffi"\)/# \1/' bdk-ffi/bdk-ffi/Cargo.toml
-    rm -f bdk-ffi/bdk-ffi/Cargo.toml.bak
+rename-library:
+  sed -i.bak '/^\[package\]/,/^\[/ s/^name *= *".*"/name = "bdkffi"/' bdk-ffi/bdk-ffi/Cargo.toml
+  rm -f bdk-ffi/bdk-ffi/Cargo.toml.bak
 
 [group("Build")]
 [doc("Build Android library.")]
